@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0070)https://www.cs.bris.ac.uk/Research/CryptographySecurity/knowledge.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" xml:lang="en-gb" class="gr__cs_bris_ac_uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bristol University | Department of Computer Science</title>
+    <!--<base target="_top">--><base href="." target="_top">
+    
+    
+    <meta content="University of Bristol" name="DCTERMS.creator">
+    <meta content="en-GB" name="DCTERMS.language">
+    <meta content="2013-09-09" name="DCTERMS.modified">
+    <meta content="2013-07-15" name="DCTERMS.created">
+    <meta content="text/html" name="DCTERMS.format">
+    <meta content="University of Bristol" name="DCTERMS.publisher">
+    <meta content="http://www.bristol.ac.uk/university/web/terms-conditions.html" name="DCTERMS.rights">
+    
+    <link rel="icon" href="http://www.bristol.ac.uk/favicon.gif" type="image/gif">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/uobcms_corporate.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1150px)" href="./52things_files/desktop.css">
+    <link rel="stylesheet" type="text/css" media="print" href="./52things_files/uobcms_print.css">
+    <link rel="stylesheet" type="text/css" media="print" href="./52things_files/boxes.css">
+    <link rel="stylesheet" type="text/css" media="print" href="./52things_files/sliders.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/efl-menu.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/homepage-base.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/computer_science.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/department.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./52things_files/news.css">
+    
+    <script src="./52things_files/jquery-2.1.3.min.js.下载"></script>
+	<script src="./52things_files/jwplayer.js.下载"></script>
+    
+    <!--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>--> 
+    <script type="text/javascript" src="./52things_files/jquery.cycle2.min.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/sm-slider.min.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/utilities.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/respond.min.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/cs_script.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/csyear.js.下载"></script>
+    <script type="text/javascript" src="./52things_files/cs_bodyscript.js.下载"></script>
+    
+    <meta name="viewport" content="width=1200"> <!-- Will need to tweak this accordingly for mobile devices -->
+    <link rel="stylesheet" type="text/css" href="./52things_files/style.css">
+<!--nomodify-->
+<title>52 Things People Should Know To Do Cryptography</title>
+</head>
+<body id="age" data-gr-c-s-loaded="true" class="jsActive">
+    <!--NAVIGATION-->
+<div class="uob-mainnav-container clearfix" id="top"> <a class="skip-to-content" href="https://www.cs.bris.ac.uk/Research/CryptographySecurity/knowledge.html#uobcms-content">Skip to main content</a> 
+  <div id="csnav">
+    
+  <!-- start content : corporate header -->
+  <ul class="width-master uob-mainnav" role="navigation" id="csmenu">
+    <li class="u-m-dropdown-item u-m-home"> <a class="u-m-link u-m-dropdown-link" tabindex="0" id="uob-mainnav-year"><span id="year1">2017-8</span></a>
+      <div class="dropdown dropdown_year">
+
+        <div class="layout-container">
+          <div class="row">
+            <div class="grid_4 column column-ug">
+              <ul class="list-no-style">
+                <li><a tabindex="-1" class="icon-backward" href="https://www.cs.bris.ac.uk/lib/lastyear.jsp"> Last year</a></li>
+                <li><a tabindex="-1" class="icon-forward" href="https://www.cs.bris.ac.uk/lib/nextyear.jsp"> Next year</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+     <li class="u-m-university"> <a class="u-m-link" href="http://www.cs.bris.ac.uk/ugadmissions/" tabindex="0"> UG Admissions</a> </li>
+    <!--
+    <li class="u-m-dropdown-item"> <a class="u-m-link u-m-dropdown-link"  tabindex="0" id="uob-mainnav-study">Courses and Programmes</a>
+      <div class="dropdown dropdown-study">
+        <div class="layout-container">
+          <div class="row">
+            <div class="grid_4 column column-ug">
+              <h2><a href="#" tabindex="-1">Undergraduate study</a></h2>
+              <ul class="list-no-style">
+                <li><a tabindex="-1" href="#">&nbsp;</a></li>
+                <li><a tabindex="-1" href="#">Computer Science BSc</a></li>
+                <li><a tabindex="-1" href="#">Computer Science MEng</a></li>
+                <li><a tabindex="-1" href="#">Mathematics and Computer Science</a></li>
+                <li><a tabindex="-1" href="#">Computer Science with Study Abroad</a></li>
+                <li><a tabindex="-1" href="#">Computer Science with Study in Continental Europe</a></li>
+                <li><a tabindex="-1" href="#">&nbsp;</a></li>
+              </ul>
+              <h2><a tabindex="-1" href="#">MSc taught programmes</a></h2>
+              <ul class="list-no-style">
+                <li><a tabindex="-1" href="#">&nbsp;</a></li>
+                <li><a tabindex="-1" href="#">Advanced Computing</a></li>
+                <li><a tabindex="-1" href="#">Advanced Computing (Internet Technologies with Security)</a></li>
+                <li><a tabindex="-1" href="#">Advanced Computing (Machine Learning, Data Mining and High-Performance Computing)</a></li>
+                <li><a tabindex="-1" href="#">Advanced Microelectronic Systems Engineering</a></li>
+                <li><a tabindex="-1" href="#">Computer Science (Conversion)</a></li>
+                <li><a tabindex="-1" href="#">Advanced Computing (Creative Technology)</a></li>
+                <li><a tabindex="-1" href="#">&nbsp;</a></li>
+              </ul>
+            </div>
+            <div class="grid_4 column column-study-related"> </div>
+          </div>
+        </div>
+      </div> 
+    </li>
+    -->
+    <li class="u-m-university"> <a class="u-m-link" href="http://www.bris.ac.uk/engineering/departments/computerscience/courses/postgraduate/" tabindex="0"> PG Admissions</a> </li>
+    <li class="u-m-university"> <a class="u-m-link" href="http://www.bris.ac.uk/engineering/departments/computerscience/research/" tabindex="0"> Research</a> </li>
+    <li class="u-m-faculties"> <a class="u-m-link" href="https://www.cs.bris.ac.uk/People/" tabindex="0"> People</a> </li>
+    <li class="u-m-business"> <a class="u-m-link" href="https://www.cs.bris.ac.uk/Teaching/" tabindex="0"> Teaching</a> </li>
+    <li class="u-m-business"> <a class="u-m-link" href="https://www.cs.bris.ac.uk/Partners/" tabindex="0"> Industrial partners</a> </li>
+    <li class="u-m-news"> <a class="u-m-link" href="https://www.cs.bris.ac.uk/news/" tabindex="0"> News</a> </li>
+    <li class="u-m-contact"> <a class="u-m-link" href="https://www.cs.bris.ac.uk/theindex.html" tabindex="0"> Index</a> </li>
+    <!--
+    <li class="u-m-contact"><a class="u-m-link" href="#top" onclick="toggle_visibility();">University Menu</a>
+    </li>
+    -->
+  </ul>
+  <!-- end content : corporate header -->   
+  </div>   
+  <div id="uobnav" style="display: none;">
+    <ul class="width-master uob-mainnav" role="navigation">
+    <li class="u-m-home">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/">Home</a>
+    </li>
+    <li class="u-m-dropdown-item">
+        <a class="u-m-link u-m-dropdown-link" tabindex="0" id="uob-mainnav-study">Study at Bristol</a>
+        <div class="dropdown dropdown-study">
+            <div class="layout-container">
+                <div class="row">
+                    <div class="grid_4 column column-ug">
+                        <h2><a href="http://www.bristol.ac.uk/prospectus/undergraduate/2014" tabindex="-1">Undergraduate study</a></h2>
+						<ul class="list-no-style">
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/undergraduate/2014/prog_index" class="btn btn-d-pink btn-full-width icon-search">Find a course</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/undergraduate/2014/watch/">Why choose Bristol?</a></li>
+							<li><a tabindex="-1" href="http://www.bris.ac.uk/prospectus/undergraduate/2014/accommodation.html">Accommodation</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/undergraduate/2014/fees-funding/">Fees and funding</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/undergraduate/2014/student-life/">Student life</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/opendays/">Open days</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_4 column column-pg">
+                        <h2><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2013">Postgraduate study</a></h2>
+						<ul class="list-no-style">
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2014/search.html" class="btn btn-d-aqua btn-full-width icon-search">Find a course or programme</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2014/apply/">How to apply</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2014/accommodation.html">Accommodation</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2014/fees-funding.html">Fees and funding</a></li>
+							<li><a tabindex="-1" href="http://www.bristol.ac.uk/prospectus/postgraduate/2014/further-info.html#video-watch">Why choose Bristol?</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_4 column column-study-related">
+                        <div class="module module-overlay module-overlay-d-lime">
+                            <h3 class="module-heading">
+                                <a tabindex="-1" href="http://www.bristol.ac.uk/international/"><span class="module-heading-bg">International students</span>
+                                <span class="module-image"><img src="./52things_files/module-international.jpg" alt="International students" width="300" height="150"></span>
+                            </a></h3>
+                        </div>
+                        <div class="module module-overlay  module-overlay-d-lime">
+                            <h3 class="module-heading">
+                                <a tabindex="-1" href="http://www.bristol.ac.uk/applicants/"><span class="module-heading-bg">Current undergraduate applicants</span>
+                                <span class="module-image"><img src="./52things_files/module-applicants.jpg" alt="Current applicants" width="300" height="150"></span>
+                            </a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of study dropdown-->
+    </li>
+    <li class="u-m-university">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/university/" tabindex="0">Explore the University</a>
+    </li>
+    <li class="u-m-faculties">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/faculties/" tabindex="0">Schools &amp; faculties</a>
+    </li>
+    <li class="u-m-research">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/research/" tabindex="0">Research</a>
+    </li>
+    <li class="u-m-business">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/business/" tabindex="0">Business</a>
+    </li>
+    <li class="u-m-news">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/news/" tabindex="0">News</a>
+    </li>
+    <li class="u-m-contact">
+        <a class="u-m-link" href="http://www.bristol.ac.uk/contacting-people/" tabindex="0">People</a>
+    </li>
+    <li class="u-m-contact"><a class="u-m-link" href="https://www.cs.bris.ac.uk/Research/CryptographySecurity/knowledge.html#top" onclick="toggle_visibility();">CS Menu</a>
+    </li>
+</ul>  
+  </div>    
+</div>       
+
+<!--BANNER-->
+<div class="uob-header-container"> 
+  <div class="uob-header width-master" role="banner"> 
+
+    <div id="uoblogo"><a accesskey="1" title="University of Bristol homepage" href="http://www.bristol.ac.uk/"><span>University of Bristol</span></a></div>
+    <div class="maintitle" id="maintitle1"><span id="title1"><a href="https://www.cs.bris.ac.uk/">Department of Computer Science</a></span></div>
+
+    <form class="uob-search" role="search" action="http://www.bristol.ac.uk/cgi-bin/search" onsubmit="return (this.words.value !== &#39;&#39;)">
+      <input type="hidden" value="cs.bris.ac.uk" name="sitesearch">
+      <input type="hidden" name="uob_ou" value="Department of Computer Science">
+      <input type="text" name="words" id="search" class="uob-search-field" value="" size="18" title="enter search keywords" onfocus="this.style.backgroundImage=&#39;none&#39;" onblur="if (this.value === &#39;&#39;) {this.style.backgroundImage=&#39;url(/images/google_custom_search_watermark.gif)&#39;}" style="background-image: url(&quot;/images/google_custom_search_watermark.gif&quot;);">
+      <input type="submit" id="submitwords" name="submitwords" value="search" class="uob-search-button">
+    </form>
+
+  </div>
+<div class="screen-overlay hidden" style="height: 3122.84px;"></div></div>  
+
+
+
+
+
+<div id="uobcms-wrapper" class="width-master"> 
+
+<h2>52 Things People Should Know To Do Cryptography</h2>
+
+<h3>What is this?</h3>
+Cryptography is a highly interdiscplinary area; calling on 
+expertise in Pure Mathematics, Computer Science and Electronic
+Engineering.
+At Bristol we cover the full range of these topics and as
+such our students come with a variety of backgrounds and
+need to understand a diverse range of topics.
+Students starting can often feel overwhelmed by the types of
+knowledge that they feel they need to know; not knowing
+what they need to remember and what they should not bother
+remembering.
+
+<p>
+
+To aid you, below we have collected a set of 52 short points
+of things we think that at the end of the first year of a
+PhD all students should have some familiarity with. 
+There is one point for every week of the year.
+If you know these things then following seminars, study groups 
+and conference talks will be much easier.
+It will also help in putting your own work into context.
+Some of these are somewhat advanced topics, some of these
+are what one would pick up in certain undergraduate courses.
+This is deliberate since some are about being a cryptographer,
+and some are to address the fact that students start with
+different backgrounds. 
+
+</p><p>
+
+If at the end of the first year you know the answers to
+ninety percent of the things we list then you should find
+that you will get more out of the conferences and talks
+you attend in your second year. In addition it will be
+easier to talk to cryptographers (who may be future
+employers) from other institutions since you will be able 
+to converse with them using a common language.
+Almost all of the following are discussed in our
+undergraduate cryptography courses.
+
+</p><p>
+By each section we give a reference to places where the
+definitions can be found, or where to start your reading.
+The list of references can be found at the bottom.
+Not all answers can be found in the references cited,
+but they should give you a place to start looking.
+
+</p><p>
+
+</p><hr>
+
+<p>
+
+</p><ol>
+<h4>Computer Engineering ([E])</h4>
+<li> <a href="http://bristolcrypto.blogspot.co.uk/2014/10/52-things-number-1-different-types-of.html">What is the difference between the following?</a>
+    <ul><li>A general-purpose processor.
+        </li><li>A general-purpose processor with instruction-set 
+            extensions.
+        </li><li>A special-purpose processor (or co-processor).
+        </li><li>An FPGA.
+    </li></ul>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/10/52-things-number-2-what-is-difference.html">What is the difference between a multi-core processor
+     and a vector processor?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/10/52-things-q3-computational-and-storage.html">Estimate the relative computational and storage capabilities of</a>...
+     <ul><li> a smart-card
+         </li><li> a micro-controller (i.e. a sensor node)
+         </li><li> an embedded or mobile computer 
+             (e.g., a mobile phone or PDA)
+         </li><li> a laptop- or desktop-class computer. 
+     </li></ul>
+
+<p></p><h4>Theoretical Computer Science ([F])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/10/52-things-number-4-complexity-class-p.html"> What is meant by the complexity class P?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/11/52-things-number-5-what-is-meant-by.html">What is meant by the complexity class NP?
+</a></li><li><a href="http://bristolcrypto.blogspot.co.uk/2014/11/52-things-number-5-what-is-meant-by.html"> </a><a href="http://bristolcrypto.blogspot.co.uk/2014/11/52-things-number-6-how-can-we-interpret.html">How can we interpret NP as the set of theorems
+     whose proofs can be checked in polynomial time?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/11/52-things-number-7-how-does-randomness.html">How does randomness help in computation, and what is
+     the class BPP?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/12/52-things-number-8-how-does-interaction.html"> How does interaction help in computation, and what is
+     the class IP?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/12/52-things-number-9-what-are-shannons_7.html">What are Shannon's definitions of entropy and information?</a>
+
+<p></p><h4>Mathematical Background ([A,B])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/12/52-things-number-10-what-is-difference.html">What is the difference between the RSA and the Strong-RSA 
+     problem?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/12/52-things-number-11-what-are-dlp-cdh.html">What are the DLP, CDH and DDH problems?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2014/12/52-things-number-12-what-is-elliptic.html">What is the elliptic curve group law?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/01/52-things-number-13-outline-use-and.html">Outline the use and advantages of projective point 
+     representation</a>.
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/01/52-things-number-14-what-is.html">What is a cryptographic pairing? </a>
+
+
+<p></p><h4>Basic (Practical or Deployed) Cryptographic Schemes and 
+    Protocols ([A])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/01/key-generation-encryption-and.html">Describe the key generation, encryption and decryption 
+     algorithms for RSA-OAEP and ECIES.
+</a></li><li><a href="http://bristolcrypto.blogspot.co.uk/2015/01/key-generation-encryption-and.html"> </a><a href="http://bristolcrypto.blogspot.co.uk/2015/01/52-things-number-15-describe-key.html">Describe the key generation, signature and verification 
+     algorithms for DSA, Schnorr and RSA-FDH</a>. 
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/01/52-things-number-17-describe-and.html">Describe and compare the round structure of DES and AES</a>.
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/02/52-things-number-18-draw-diagram-or.html">Draw a diagram (or describe) the ECB, CBC and CTR modes of
+     operation</a>. 
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/02/52-things-number-19-shamir-secret.html">Describe the Shamir secret sharing scheme</a>.
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/02/52-things-number-20-how-are-merkle.html">How are Merkle-Damgaard style hash functions constructed?</a>
+
+
+<p></p><h4>Cryptographic Implementation Details ([A])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/02/52-things-number-21-how-does-crt-method.html">How does the CRT method improve performance of RSA?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/03/52-things-number-22-how-do-you.html">How do you represent a number and multiply numbers in 
+     Montgomery arithmetic?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/03/52-things-number-22-write-c-program-to.html">Write a C program to implement Montgomery arithmetic.</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/02/52-things-number-24-describe-binary-m.html">Describe the binary, m-ary and sliding window exponentiation
+     algorithms. </a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/03/52-things-number-25-methods-for-modular.html">Describe methods for modular reduction using "special" primes 
+     that define GF(p) and GF(2^n).</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/04/52-things-number-26-describe-naf-scalar.html">Describe the NAF scalar multiplication algorithm. </a>
+
+<p></p><h4>Security Definitions and Proofs ([A,B,C])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/04/52-things-number-27-what-is-aead.html">What is the AEAD security definition for symmetric key
+     encryption?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/04/52-things-number-28-what-is-ind-cca.html">What is the IND-CCA security definition for public key
+     encryption?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/04/52-things-number-29-what-is-uf-cma.html">What is the UF-CMA security definition for digital signatures?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/05/52-things-number-30-roughly-outline-br.html">Roughly outline the BR security definition for key agreement?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/05/52-things-number-31-game-hopping-proof.html">Give one proof of something which involves game hopping</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/05/52-things-number-32-difference-between.html">Outline the difference between a game based and a simulation
+     based security definition.</a>
+
+<p></p><h4>Mathematical Attacks ([A,B])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/05/52-things-number-33-how-does-bellcore.html">How does the Bellcore attack work against RSA with CRT?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/05/52-things-number-15-describe-baby.html">Describe the Baby-Step/Giant-Step method for breaking DLPs</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/06/52-things-number-35-give-rough-idea-of.html">Give the rough idea of Pollard rho, Pollard "kangaroo" and
+     parallel Pollard rho attacks on ECDLP. </a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/06/52-things-number-36-index-calculus.html">What is meant by index calculus algorithms?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/06/52-things-number-37-number-field-sieve.html">Roughly outline (in two paragraphs only) how the NFS works.</a>
+
+
+<p></p><h4>Practical Attacks ([D])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/06/52-things-number-38-what-is-difference.html">What is the difference between a covert channel and a
+     side-channel?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-39-what-is-difference.html">What is the difference between a side-channel attack and
+     a fault attack?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-40-what-is-normally.html">What is usually considered the difference between DPA and 
+     SPA?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-41-are-all-side.html">Are all side channels related to power analysis?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-42-look-at-your-c-code.html">Look at your C code for Montgomery multiplication above;
+     can you determine where it could leak side channel information?
+</a></li><li><a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-42-look-at-your-c-code.html"> </a><a href="http://bristolcrypto.blogspot.co.uk/2015/07/52-things-number-43-describe-some-basic.html">Describe some basic (maybe ineffective) defences against
+     side channel attacks proposed in the literature for AES.</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/08/52-things-number-44-describe-some-basic.html">Describe some basic (maybe ineffective) defences against
+     side channel attacks proposed in the literature for ECC.</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/08/52-things-number-45-describe-some-basic.html">Describe some basic (maybe ineffective) defences against
+     side channel attacks proposed in the literature for RSA.</a>
+
+<p></p><h4>Advanced Protocols and Constructions ([A,B])</h4>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/08/52-things-number-46-what-do-correctness.html">What does correctness, soundness and zero-knowledge mean
+     in the context of a Sigma protocol?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.co.uk/2015/08/52-things-number-47-what-is-fiat-shamir.html">What is the Fiat-Shamir transform?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.be/2015/09/52-things-number-48-what-is-purpose-and.html">What is the purpose and use of a TPM?</a>
+</li><li> <a href="http://bristolcrypto.blogspot.be/2015/09/52-things-number-49-describe-basic.html">Describe the basic ideas behind IPSec and TLS.</a>
+</li><li> What is the BLS pairing based signature scheme?
+</li><li> <a href="http://bristolcrypto.blogspot.be/2015/10/52-things-number-51-what-is-security.html">What is the security model for ID-based encryption, and describe one IBE scheme.</a>
+</li><li> <a href="http://bristolcrypto.blogspot.be/2015/10/52-things-number-52-pick-advanced.html">Pick an advanced application concept such as e-Voting, Auctions or Multi-Party Computation. What are the rough security requirements of such a system?</a>
+</li></ol>
+
+<hr>
+
+<h3>Further Reading</h3>
+
+<ul>
+<li>[A] <a href="./[A].pdf">Nigel's book</a>
+    is deliberately informal and tries to give quick flavours of 
+    what is important in theory and practice.
+</li><li>[B] The <a href="./[B].pdf">Katz Lindell book</a> 
+    is a better formal introduction to modern theoretical cryptography
+    but it is less good in its treatment of what is important in 
+    the real world (e.g. the coverage of AES, ECC, implementation, etc
+    is quite limited).
+</li><li>[C] Goldreich's two volume book(<a href="./[C1].pdf">I</a>, <a href="./[C2].pdf">II</a>)
+    is a very good introduction to the deep theory, but deliberately does 
+    not cover practical cryptography.
+</li><li>[D] <a href="./[D].pdf">Elisabeth's DPA book</a> 
+    is the best introduction to all things about side-channels.
+</li><li>[E] <a href="./[E].pdf">
+    Dan's book</a> is a good starting place for computer architecture and
+    learning VHDL.
+</li><li>[F] <a href="./[F].pdf">Goldreich's book</a> on complexity theory is a good place to start.
+    Its approach is much more down-to-earth and sensible than other approaches
+    (i.e. P vs NP is presented in terms of is it easier to check or find proofs?)
+</li></ul>
+</div>
+
+<!--FOOTER-->
+<!--UOB EDITED FOOTER-->
+<div class="uob-mega-footer-container clearfix"> 
+  <!-- navigation object : shared footer --> 
+  <!-- start content : corporate footer -->
+  <div class="uob-mega-footer width-master">
+    <div class="uob-mega-footer-col uob-mega-footer-col-1">
+      <h4>Department of Computer Science </h4>
+      <p class="uob-mega-footer-address"> University of Bristol<br>
+        Department of Computer Science<br>
+        Merchant Venturers Building<br>
+        Woodland Road<br>
+        Bristol BS8 1UB UK<br>
+        +44 (0)117 331 5663 </p>
+      <h4>Information for</h4>
+      <ul class="list-users">
+        <li><a href="http://www.bris.ac.uk/engineering/departments/computerscience/courses/">Prospective students</a></li>
+        <li><a href="http://www.cs.bris.ac.uk/Partners/">Industrial partners</a></li>
+      </ul>
+     
+    </div>
+    <div class="uob-mega-footer-col mega-footer-col-2">
+      <h4><a href="http://www.bris.ac.uk/engineering/departments/computerscience/research/">Research Groups</a></h4>
+      <ul>
+        <li><a href="http://www.bris.ac.uk/engineering/research/research-groups/vi-lab.html">Visual Information Laboratory</a></li>
+        <li><a href="http://www.bris.ac.uk/engineering/research/research-groups/cryptography.html">Cryptography</a></li>
+        <li><a href="http://www.bris.ac.uk/engineering/research/research-groups/interactiongraphics.html">Interaction and Graphics</a></li>
+        <li><a href="http://www.bris.ac.uk/engineering/research/research-groups/microelectronics.html">Microelectronics</a></li>
+        <!--<li><a href="http://www.bristol.ac.uk/prospectusrequest/">Request a prospectus</a></li>-->
+        <li><a href="http://www.bris.ac.uk/engineering/research/research-groups/intelligentsys.html">Intelligent Systems</a></li>
+        <li><a href="http://www.cs.bris.ac.uk/Research/Algorithms/">Theory and Algorithms</a></li>
+      </ul>
+      <h4><a href="http://www.bristol.ac.uk/research/">Research</a> Centres</h4>
+      <ul>
+        <!--<li><a href="http://www.bristol.ac.uk/research/vision.html">Research vision</a></li>-->
+        <li><a href="https://www.acrc.bris.ac.uk/">Advanced Computing Research Centre</a></li>
+        <li><a href="http://www.brl.ac.uk/">Bristol Robotics Laboratory</a></li>
+        <li><a href="http://www.cs.bris.ac.uk/Research/ITLaw/">Centre for IT and Law</a></li>
+        <li><a href="http://www.cs.bris.ac.uk/Research/QuantumComputing/">Quantum Computation and Information</a></li>       
+      </ul>
+    </div>
+    <div class="uob-mega-footer-col uob-mega-footer-col-3">
+      <h4><a href="http://www.bristol.ac.uk/university/">Explore the University</a></h4>
+      <ul>
+        <li><a href="http://www.bristol.ac.uk/maps/">Maps and travel</a></li>
+        <li><a href="http://www.bristol.ac.uk/university/visit/">Tours and visits</a></li>
+        <li><a href="http://www.bristol.ac.uk/citybristol/">Photo gallery</a></li>
+        <!--<li><a href="http://www.bristol.ac.uk/university/history/">History of the University</a></li>-->
+        <li><a href="http://www.bristol.ac.uk/university/governance/">Governance</a></li>
+        <li><a href="http://www.bristol.ac.uk/citybristol/">Explore the city of Bristol</a></li>
+      </ul>
+      <!--<h4><a href="http://www.bristol.ac.uk/business/">Business and enterprise</a></h4>
+			<ul>
+				<li><a href="http://www.bristol.ac.uk/research/business.html">Research collaboration</a></li>
+				<li><a href="http://www.bristol.ac.uk/red/">Research and Enterprise Development</a></li>
+			</ul>-->
+      <h4>&nbsp;</h4>
+      <h4><a href="http://www.bristol.ac.uk/jobs/">University Jobs</a></h4>
+      <ul>
+        <li><a href="http://www.bristol.ac.uk/jobs/">Working at Bristol</a></li>
+        <li><a href="http://www.bristol.ac.uk/jobs/find/">Job listings</a></li>
+      </ul>
+    </div>
+    <div class="uob-mega-footer-col uob-mega-footer-col-4">
+      <h4><a href="http://www.bristol.ac.uk/index/">A–Z of the University</a></h4>
+      <ul class="uob-mega-footer-a-z clearfix">
+        <li><a href="http://www.bristol.ac.uk/index/0">#</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/a">A</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/b">B</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/c">C</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/d">D</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/e">E</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/f">F</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/g">G</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/h">H</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/i">I</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/j">J</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/k">K</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/l">L</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/m">M</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/n">N</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/o">O</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/p">P</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/q">Q</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/r">R</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/s">S</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/t">T</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/u">U</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/v">V</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/w">W</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/x">X</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/y">Y</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/z">Z</a></li>
+        <li><a href="http://www.bristol.ac.uk/index/full" class="see-all">See all</a></li>
+      </ul>
+      <ul role="contentinfo">
+        <li><a href="http://www.bristol.ac.uk/help/">Help</a></li>
+        <li><a href="http://www.bristol.ac.uk/web/policies/terms-conditions.html">Terms and conditions</a></li>
+        <li><a href="http://www.bristol.ac.uk/web/policies/privacy-policy.html">Privacy and cookie policy</a></li>
+        <li><a href="http://www.bristol.ac.uk/web/policies/terms-conditions.html#copyright">© 1995-2017 University of Bristol</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end content : corporate footer --> 
+</div>
+
+
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./52things_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body></html>
